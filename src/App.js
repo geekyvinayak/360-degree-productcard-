@@ -5,7 +5,7 @@ function App() {
   
   function generateImagePaths(prefix, totalImages) {
     const images = [];
-    for (let i = 1; i <= totalImages; i++) {
+    for (let i = totalImages; i > 0; i--) {
       const fileNumber = i.toString().padStart(2, '0');
       images.push(`${prefix}/Filename_${fileNumber}.jpg`);
     }
