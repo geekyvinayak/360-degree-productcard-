@@ -7,7 +7,7 @@ function App() {
     const images = [];
     for (let i = totalImages; i > 0; i--) {
       const fileNumber = i.toString().padStart(2, '0');
-      images.push(`${prefix}/Filename_${fileNumber}.jpg`);
+      images.push(`${prefix}/Filename_${fileNumber}.jpg?dndh=${Math.floor((Math.random() * 10000) + 1)}`);
     }
     return images;
   }
